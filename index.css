@@ -1,0 +1,95 @@
+p, html, body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: normal;
+    background-color: #F5F5F5;
+}
+.container{
+    margin: 0 auto;
+    width: 375px;
+}
+header .container {
+    border-bottom: 1px solid #C6C6C6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-items: center;
+    /*width: 100%;*/
+    background-color: #FFFFFF;
+}
+.post{
+    background-color: #FFF;
+    padding: 15px 0;
+    border-bottom: 25px solid #EDEDED;
+}
+.post:last-of-type{
+    background-color: #FFF;
+    padding: 15px 0;
+    border-bottom: none;
+}
+.logo{
+    margin: 10px 15px;
+    width: 127px;
+}
+
+.avatar{
+    margin: 0 15px;
+    width: 34px;
+    height: 34px;
+    border-radius: 100%;
+}
+
+.post-user-area{
+    justify-items: center;
+    align-items: center;
+    margin-bottom: 15px;
+    display: flex;
+    gap: 10px;
+}
+.bold{
+    font-weight: 700;
+}
+.post-image{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.post-icons{
+    margin-bottom: 12px;
+}
+.post-icon{
+    width: 24px;
+    height: auto;
+    margin-right: 6px;
+}
+.post-likes,
+.post-handle{
+    display: inline-block;
+}
+.post-likes{
+    margin-bottom: 12px;
+}
+
+.lower{
+    margin: 12px 15px;
+}
+/* Grow Rotate */
+.hvr-grow-rotate {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+}
+.hvr-grow-rotate:hover, .hvr-grow-rotate:focus, .hvr-grow-rotate:active {
+    -webkit-transform: scale(1.1) rotate(4deg);
+    transform: scale(1.1) rotate(4deg);
+}
